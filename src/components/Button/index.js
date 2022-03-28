@@ -1,23 +1,23 @@
 import Styled from '@emotion/styled'
 import PropTypes from 'prop-types'
 
-const Demo = ({ name }) => {
+const Button = ({ name }) => {
   return <Style>{name}</Style>
 }
 
-Demo.propTypes = {
+Button.propTypes = {
   name: PropTypes.string.isRequired,
 }
 
-Demo.defaultProps = {
-  name: 'Demo',
+Button.defaultProps = {
+  name: 'Button',
 }
 
-const Style = Styled('div')`
-  label: Demo;
+const Style = Styled('button')`
+  label: Button;
 
   text-align: center;
   font-size: 20px;
 `
 
-export default Demo
+export default Button

@@ -9,7 +9,7 @@ module.exports = {
       content: 'docs/installation.md',
     },
     {
-      name: 'UI Components',
+      name: 'Components',
       components: 'src/components/**/index.js',
       exampleMode: 'collapse', // 'hide' | 'collapse' | 'expand'
       usageMode: 'collapse', // 'hide' | 'collapse' | 'expand'
@@ -32,6 +32,7 @@ module.exports = {
     },
   },
   require: ['normalize.css', './src/style.css'],
+  ignore: ['components/index.js'],
   getComponentPathLine(componentPath) {
     const dir = path.dirname(componentPath)
     const arrDir = dir.split('/')
