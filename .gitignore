@@ -1,0 +1,10 @@
+# dependencies
+/node_modules
+
+# log
+package-lock.json
+yarn.lock
+yarn-error.log
+
+# misc
+.DS_Store
