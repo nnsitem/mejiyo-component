@@ -1,6 +1,10 @@
 # dependencies
 /node_modules
 
+# folder
+styleguide
+lib/*
+
 # log
 package-lock.json
 yarn.lock

@@ -23,8 +23,7 @@
   "homepage": "https://github.com/metisn/mejiyo-component#readme",
   "scripts": {
     "build": "rimraf lib && babel src/components --out-dir lib",
-    "deploy": "cp now.json styleguide/ && now ./styleguide && now alias",
-    "deploy:vercel": "cp now.json styleguide/ && now ./styleguide && now alias",
+    "deploy:vercel": "styleguide:build && cp now.json styleguide/ && now ./styleguide && now alias",
     "styleguide": "styleguidist server",
     "styleguide:build": "rimraf styleguide && styleguidist build",
     "prepublishOnly": "npm run build && npm run styleguide:build"
