@@ -32,7 +32,7 @@ module.exports = {
     },
   },
   require: ['normalize.css', './src/style.css'],
-  ignore: ['components/index.js'],
+  ignore: ['**/components/index.js'],
   getComponentPathLine(componentPath) {
     const dir = path.dirname(componentPath)
     const arrDir = dir.split('/')
