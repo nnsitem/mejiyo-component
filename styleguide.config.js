@@ -38,6 +38,6 @@ module.exports = {
     const componentName = arrDir[arrDir.length - 1]
     if (componentName === 'components') return ''
 
-    return `import ${componentName} from '${packageInfo.name}/lib/${componentName}';`
+    return `import { ${componentName} } from '${packageInfo.name}';`
   },
 }
