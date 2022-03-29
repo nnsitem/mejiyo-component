@@ -3,6 +3,26 @@ const packageInfo = require('./package.json')
 
 module.exports = {
   title: `Version: ${packageInfo.version}`,
+  theme: {
+    color: {
+      link: 'firebrick',
+      linkHover: 'salmon',
+      sidebarBackground: 'gray',
+      codeBackground: '#0C1E37',
+      codeBase: 'white',
+    },
+    fontSize: {
+      h1: 36,
+    },
+    borderRadius: 6,
+  },
+  // styles: {
+  //   Para: {
+  //     para: {
+  //       fontSize: '13px',
+  //     },
+  //   },
+  // },
   sections: [
     {
       name: 'Installation',
@@ -32,7 +52,7 @@ module.exports = {
       ],
     },
   },
-  require: ['normalize.css', './src/style.css'],
+  require: ['@fortawesome/fontawesome-free/css/all.min.css', './src/style.css', 'normalize.css'],
   ignore: ['**/components/index.js'],
   getComponentPathLine(componentPath) {
     const dir = path.dirname(componentPath)

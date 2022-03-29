@@ -1,11 +1,14 @@
-Install with npm
+React UI framework to make coding easier,
+Also available in [npm packages](http://daringfireball.net/projects/markdown/). <br /><br />
 
-```html static
+### **npm** <br />
+
+Get started, run following command:
+
+```bash static
+# using npm
 npm install component-lib --save
-```
 
-Install with yarn
-
-```html static
-yarn add component-lib
+# using yarn
+yarn add component-lib --save
 ```
