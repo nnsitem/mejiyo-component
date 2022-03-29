@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 
-import { hexToRgb } from '../../utils'
+import { hexToRgb } from '../utils'
 
 function getButtonSize(size) {
   switch (size) {

@@ -5,9 +5,6 @@ module.exports = {
   title: `Version: ${packageInfo.version}`,
   theme: {
     color: {
-      link: 'firebrick',
-      linkHover: 'salmon',
-      sidebarBackground: 'gray',
       codeBackground: '#0C1E37',
       codeBase: 'white',
     },
@@ -53,7 +50,7 @@ module.exports = {
     },
   },
   require: ['@fortawesome/fontawesome-free/css/all.min.css', './src/style.css', 'normalize.css'],
-  ignore: ['**/components/index.js'],
+  ignore: ['**/components/index.js', '**/components/utils/index.js'],
   getComponentPathLine(componentPath) {
     const dir = path.dirname(componentPath)
     const arrDir = dir.split('/')
