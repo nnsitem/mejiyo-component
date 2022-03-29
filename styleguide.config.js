@@ -10,6 +10,7 @@ module.exports = {
     },
     {
       name: 'Components',
+      content: 'docs/components.md',
       components: 'src/components/**/index.js',
       exampleMode: 'collapse', // 'hide' | 'collapse' | 'expand'
       usageMode: 'collapse', // 'hide' | 'collapse' | 'expand'
