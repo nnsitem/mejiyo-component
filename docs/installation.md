@@ -7,8 +7,8 @@ Get started, run following command:
 
 ```bash static
 # using npm
-npm install component-lib --save
+npm install mejiyo-component --save
 
 # using yarn
-yarn add component-lib --save
+yarn add mejiyo-component --save
 ```
